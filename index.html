@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S Luxe Salon</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #fff0f6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ff4d88, #ff99c8);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: 20px auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 105, 180, 0.2);
+    }
+
+    h2 {
+      color: #ff4d88;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid #ffe0eb;
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ffb3d1;
+      outline: none;
+    }
+
+    button {
+      background: #ff4d88;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 1em;
+    }
+
+    button:hover {
+      background: #e6005c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #ff4d88;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>S Luxe Salon</h1>
+  <p>Soft beauty, luxury care, flawless you ✨</p>
+</header>
+
+<section>
+  <h2>Our Services</h2>
+  <ul>
+    <li>Hair Relaxing</li>
+    <li>Hair Styling (Hair Do)</li>
+    <li>Hair Installations</li>
+    <li>Nails</li>
+    <li>Eyelashes</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Book an Appointment</h2>
+  <form action="https://formspree.io/f/yourformid" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="tel" name="phone" placeholder="Your Phone Number" required>
+
+    <select name="service" required>
+      <option value="">Select Service</option>
+      <option>Hair Relaxing</option>
+      <option>Hair Styling</option>
+      <option>Installations</option>
+      <option>Nails</option>
+      <option>Eyelashes</option>
+    </select>
+
+    <input type="date" name="date" required>
+    <textarea name="message" placeholder="Additional Notes"></textarea>
+
+    <button type="submit">Book Now</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 S Luxe Salon. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
